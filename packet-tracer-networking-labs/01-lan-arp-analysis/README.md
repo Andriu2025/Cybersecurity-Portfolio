@@ -173,22 +173,13 @@ This lab provides a basic foundation for analyzing network events before moving 
 
 The following screenshots were collected during the lab to document the network configuration, ARP resolution, and ICMP communication:
 
-| Evidence                     | Description 
-| ---------------------------- | ----------------------------------------------------
-| `01-topology.png`            | Network topology showing PC0, the Cisco Catalyst 
-|                              | 2960 switch, and PC1.
-| ---------------------------- | ----------------------------------------------------
-| `02-ip-configuration.png`    | IPv4 configuration of the   hosts.
-| ---------------------------- | ----------------------------------------------------
-| `03-arp-initial.png`         | Initial ARP table before communication was 
-|                              | generated.
-| ---------------------------- | ----------------------------------------------------
-| `04-arp-table-populated.png` | ARP table after communication, showing the resolved 
-|                              | IP-to-MAC association for PC1.
-| ---------------------------- | ----------------------------------------------------
-| `05-icmp-pdu-details.png`    | ICMP PDU details and packet progression observed in 
-|                              | Simulation Mode, including the relevant layer 
-|                              | information.
+| Evidence | Description |
+|----------|-------------|
+| `01_topology.png` | Network topology showing PC0, the Cisco Catalyst 2960 switch, and PC1. |
+| `02_ip_config.png` | IPv4 configuration of the hosts. |
+| `03_arp_initial.png` | Initial ARP table before communication was generated. |
+| `04_arp_table_populated.png` | ARP table after communication, showing the resolved IP-to-MAC association for PC1. |
+| `05_icmp_pdu_details.png` | ICMP PDU details and packet progression observed in Simulation Mode, including the relevant layer information. |
 
 The evidence supports the observations and analysis described throughout the lab and allows the communication process to be reproduced and reviewed.
 
