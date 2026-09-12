@@ -22,6 +22,8 @@ PC0 (192.168.1.10)
 PC1 (192.168.1.20)
 ```
 
+---
+
 ## IP Configuration
 
 Both hosts were configured with static IPv4 addresses within the same /24 network.
@@ -35,6 +37,8 @@ A default gateway was configured in the Packet Tracer hosts, but it was not requ
 
 ![IP Configuration](screenshots/02-ip-config.png)
 
+---
+
 ## Methodology
 
 The following procedure was used to test communication between PC0 and PC1:
@@ -46,6 +50,8 @@ The following procedure was used to test communication between PC0 and PC1:
 5. Verified the ARP table on PC0 again after communication was established.
 
 ## ARP Analysis
+
+---
 
 Before generating traffic, PC0 was checked for existing ARP entries using:
 
@@ -83,6 +89,9 @@ PC1
       v
 PC0
 ```
+
+---
+
 ## ICMP Analysis
 
 After the ARP resolution process, PC0 was able to communicate with PC1 using ICMP.
@@ -117,6 +126,8 @@ The capture shows the ICMP PDU details observed during the communication between
 
 ![ICMP PDU Details](screenshots/05-icmp-pdu-details.png)
 
+---
+
 ## ARP Final
 
 After the ICMP communication was completed, the ARP table on PC0 was checked again using:
@@ -139,6 +150,8 @@ The final ARP state confirms that the MAC address resolution performed before th
 
 *The capture shows the ARP table on PC0 after network traffic was generated and the MAC address of PC1 was resolved.*
 
+---
+
 ## Observations
 
 The following observations were made during the network communication test:
@@ -153,6 +166,7 @@ The following observations were made during the network communication test:
 
 These observations demonstrate how ARP resolution enables IPv4 communication over an Ethernet LAN and how ICMP can be used to verify connectivity between hosts.
 
+---
 
 ## SOC L1 Perspective
 
@@ -169,6 +183,8 @@ The traffic observed in this lab demonstrates several elements that can be relev
 
 This lab provides a basic foundation for analyzing network events before moving to more advanced monitoring tools such as Wireshark, IDS/IPS, SIEM, and EDR platforms.
 
+---
+
 ## Evidence
 
 The following screenshots were collected during the lab to document the network configuration, ARP resolution, and ICMP communication:
@@ -182,6 +198,8 @@ The following screenshots were collected during the lab to document the network 
 | `05_icmp_pdu_details.png` | ICMP PDU details and packet progression observed in Simulation Mode, including the relevant layer information. |
 
 The evidence supports the observations and analysis described throughout the lab and allows the communication process to be reproduced and reviewed.
+
+---
 
 ## Conclusion
 
